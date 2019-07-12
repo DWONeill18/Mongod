@@ -13,8 +13,6 @@ mongod --version
 
 
 #setup db
-cd Mongod
-./mongod.sh
 sudo cp mongodb.conf /etc/
 systemctl start mongodb
 sudo systemctl status mongodb
