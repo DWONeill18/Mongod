@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 #installs
 sudo apt -y install
@@ -14,5 +14,5 @@ mongod --version
 
 #setup db
 sudo cp mongodb.conf /etc/
-systemctl start mongodb
+sudo systemctl start mongodb
 sudo systemctl status mongodb
