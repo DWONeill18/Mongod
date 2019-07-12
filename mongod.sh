@@ -1,6 +1,5 @@
 !#/bin/bash
 
-
 #installs
 sudo apt -y install
 sudo apt -y update
@@ -11,3 +10,11 @@ sudo apt -y install curl
 sudo apt install -y mongodb
 sudo apt -y update
 mongod --version
+
+
+#setup db
+cd Mongod
+./mongod.sh
+sudo cp mongodb.conf /etc/
+systemctl start mongodb
+sudo systemctl status mongodb
